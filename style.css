@@ -18,30 +18,13 @@ html {
 }
 
 body {
-  background: var(--dark-cyan);
+  background: url("./images/bg-pattern-top.svg") -30% -400px/800px,
+    url("./images/bg-pattern-bottom.svg") 125% 350px/800px, var(--dark-cyan);
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: grid;
   place-content: center;
   font-family: "Kumbh Sans", sans-serif;
-  position: relative;
-  overflow: hidden;
-}
-
-.img-background {
-}
-
-.img-background img:first-child {
-  position: fixed;
-  top: -90%;
-  left: -50%;
-  z-index: -1;
-}
-
-.img-background img:last-child {
-  position: fixed;
-  bottom: -90%;
-  right: -50%;
-  z-index: -1;
 }
 
 .container {
